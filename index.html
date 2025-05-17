@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAVYA SREE - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfbc633508.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Scientist</p>
+            <h1> Hi, <br>I'm <span>Bavya Sree</span></h1>
+            <p> Welcome to my space on the web! <br>
+                I’m an aspiring AI and Machine Learning engineer with a background in data science. My journey started with curiosity and turned into a passion for building intelligent solutions using Python, SQL, and cutting-edge tools like Generative AI and LLMs. 
+                
+                I believe in continuous learning, hands-on experimentation, and the power of data to drive innovation.
+                
+                Thanks for stopping by — feel free to explore my work!</p>
+        </div>
+    </div>
+</div>
+
+<!---------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey, I'm Bavya — a self-made AI/ML Engineer and recent Data Science graduate with a deep passion for building intelligent systems that solve real-world problems.
+                <br>I’ve been actively working on data science and machine learning projects, constantly sharpening my skills and turning data into meaningful insights. Currently, I’m diving into the world of Generative AI and Large Language Models, exploring their potential through hands-on learning using Python and SQL.
+                <br>Curious by nature and driven by purpose, I’m always learning, experimenting, and pushing myself to grow in this ever-evolving AI landscape.
+                <br>Let’s connect and build something impactful!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('courses&certificates')">Courses & Certificates</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages & Tools:</span><br>Python, SQL, MATLAB, Cypher, Git</li>
+                        <li><span>Libraries & Frameworks:</span><br>Pandas, NumPy, Scikit-Learn, TensorFlow, Matplotlib</li>
+                        <li><span>Databases:</span><br>PostgreSQL, Neo4j, SPSS</li>
+                        <li><span>Platforms:</span><br>Jupyter Notebook, VS Code, Power BI</li>
+                        <li><span>Core Areas:</span><br>Data Science, Machine Learning, Deep Learning, Generative AI</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2025 </span><br>M.Sc. Data Science | 84% <br>Bharathiar University, Coimbatore.</li>
+                        <li><span>2020-2023</span><br>B.Sc. Mathematics | 88.26% <br>PSGR Krishnammal College For Women, Coimbatore.</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="courses&certificates">
+                    <ul>
+                        <li><span>Data Analytics with Python</span><br>NPTEL – Issued Apr 2024</li>
+                        <li><span>Machine Learning for Data Science Projects</span><br>IBM SkillBuilds – Issued Jun 2024</li>
+                        <li><span>Getting Started with Enterprise-grade AI</span><br>IBM SkillBuilds – Issued Jun 2024</li>
+                        <li><span>Python Project for AI & Application Development</span><br>IBM – Issued Sep 2022</li>
+                        <li><span>Python for Data Science, AI & Development</span><br>IBM – Issued Sep 2022</li>
+                        <li><span>Data Science Methodology</span><br>IBM – Issued Aug 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Projects------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>BCG GenAI Simulation - Forage</h2>
+                <p>
+                    Built an AI-powered financial chatbot using Python and pandas, interpreting data from 10-K/10-Q reports. Developed rule-based logic to deliver user-friendly financial insights as part of BCG’s GenAI Consulting simulation.
+                </p>
+                <a href="https://github.com/BavyaSree-C/BCG_genAI_intern_task/blob/main/README.md">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-lungs-virus"></i>
+                <h2>Thorax Disease Detection with Deep Learning</h2>
+                <p>
+                    Developed deep learning models using NIH ChestX-ray data to classify pulmonary diseases. Compared CNN and hybrid models (MobileNet, U-Net, Transformer with Attention), and applied Grad-CAM for interpretable heatmap visualizations.
+                </p>
+                <a href="https://github.com/BavyaSree-C">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-stethoscope"></i>
+                <h2>Diabetes Prediction Using Python</h2>
+                <p>
+                    Performed EDA on 750+ records to uncover feature correlations (glucose, insulin, BMI) using heatmaps and pair plots. Built Decision Tree and Random Forest models with 100% test accuracy using scikit-learn, pandas, and NumPy.
+                </p>
+                <a href="https://github.com/BavyaSree-C/DIABETES-DISEASE-ANALYSIS-AND-PREDICTION/blob/main/README.md">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!---------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bavyasreechinnasamy@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 6379423705</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bavyasreechinnasamy/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" class="btn btn2" download>Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Bavya | AI/ML Engineer. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+        
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz39vRtEi61st0sOvsiIfWlrFGCSnyY06OjB-Zfbx1sasBqM6khp3TzCd24Z-yn3h4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
